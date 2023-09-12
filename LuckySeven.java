@@ -11,14 +11,18 @@ public class LuckySeven {
                 + " how much do you want to play?");
         int money = scan.nextInt();
         do {
+            // clear the input
+            scan.nextLine();
 
             // random is used
             Random rand = new Random();
+
             // Let´s define 3 random numbers
             // number between 1-10 that´s why we need +1
             int rNumb1 = rand.nextInt(10) + 1;
             int rNumb2 = rand.nextInt(10) + 1;
             int rNumb3 = rand.nextInt(10) + 1;
+
             System.out.println("Here is you´r numbers: " + rNumb1 + ", " + rNumb2 + ", " + rNumb3);
             money -= 1;
             // if you have three seven, you have jackpot!
