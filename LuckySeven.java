@@ -43,17 +43,21 @@ public class LuckySeven {
                 System.out.println("You Win 3 money!");
                 money += 3;
                 System.out.println("Now you have " + money + " money!");
+                // If nothing is seven, you lose
             } else {
                 System.out.println("You lose!");
                 System.out.println("Now you have " + money + " money!");
             }
+            // asking, do you play again
             System.out.println("Do you want to play again? press enter or n");
             answer = scan.nextLine();
 
-            // if (answer.equals("") && money > 0) {
-            // System.out.println("New game star! Press enter again!");
+            // Here is some bugi. When you want to play again and press enter,
+            // you need to press again if you want that game really started again.
+            if (answer.equals("") && money > 0) {
+                System.out.println("New game star! Press enter again!");
 
-            // }
+            }
 
         } while (answer.equals("") && money > 0);
         {
