@@ -10,9 +10,11 @@ public class LuckySeven {
         System.out.println("Give me money, "
                 + " how much do you want to play?");
         int money = scan.nextInt();
+
+        // clear the input
+        scan.nextLine();
+
         do {
-            // clear the input
-            scan.nextLine();
 
             // random is used
             Random rand = new Random();
