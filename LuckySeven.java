@@ -54,8 +54,6 @@ public class LuckySeven {
             System.out.println("Do you want to play again? press enter or n");
             answer = scan.nextLine();
 
-            // Here is some bugi. When you want to play again and press enter,
-            // you need to press again if you want that game really started again.
             if (answer.equals("") && money > 0) {
                 System.out.println("New game star! Press enter again!");
 
