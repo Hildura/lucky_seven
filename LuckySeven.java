@@ -50,10 +50,10 @@ public class LuckySeven {
             System.out.println("Do you want to play again? press enter or n");
             answer = scan.nextLine();
 
-            if (answer.equals("") && money > 0) {
-                System.out.println("New game star! Press enter again!");
+            // if (answer.equals("") && money > 0) {
+            // System.out.println("New game star! Press enter again!");
 
-            }
+            // }
 
         } while (answer.equals("") && money > 0);
         {
