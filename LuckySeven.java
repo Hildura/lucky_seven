@@ -47,21 +47,22 @@ public class LuckySeven {
                 System.out.println("You lose!");
                 System.out.println("Now you have " + money + " money!");
             }
-            System.out.println("Do you want to play again? y/n ");
-            answer = scan.next();
+            System.out.println("Do you want to play again? press enter or n");
+            answer = scan.nextLine();
 
-            if (answer.equals("y") && money > 0) {
-                System.out.println("New game star!");
+            if (answer.equals("") && money > 0) {
+                System.out.println("New game star! Press enter again!");
 
             }
-        } while (answer.equals("y") && money > 0);
+
+        } while (answer.equals("") && money > 0);
         {
 
             if (answer.equals("n")) {
-                System.out.println("Kiitos kun pelasit!");
+                System.out.println("Thanks for playing!");
 
             } else {
-                System.out.println("Rahasi loppuivat!");
+                System.out.println("You'r money is over!");
             }
         }
     }
